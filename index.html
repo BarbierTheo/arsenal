@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Arsenal</title>
     <link rel="stylesheet" href="./assets/css/tailwind.css">
     <!-- npx @tailwindcss/cli -i ./assets/css/style.css -o ./assets/css/tailwind.css --watch -->
+    <link href="./assets/img/favicon.ico" rel="icon" type="image/x-icon">
 </head>
+
 <body>
     <nav class="w-fit mx-auto my-6">
-        <a href="" class=""><img src="./assets/img/arsenal-cannon-logo-png_seeklogo-405673.png" alt="" class="w-32"></a>
+        <a href="" class=""><img src="./assets/img/arsenal-cannon-logo-png_seeklogo-405673.png" alt="" class="w-16"></a>
     </nav>
     <section class="flex flex-col items-center">
-        <p>16ème journée de Premier League</p>
+        <p>25ème journée de Premier League</p>
+        <progress class="progress w-56 mt-4 mb-2" value="24" max="36"></progress>
         <div class="flex items-center gap-4 my-4">
             <img src="./assets/img/logo.png" alt="" class="w-28 h-auto">
             <p>vs.</p>
@@ -54,5 +58,71 @@
         </div>
 
     </section>
+
+    <main class="flex flex-col items-center mt-10">
+
+        <div role="tablist" class="tabs tabs-lift">
+            <a role="tab" class="tab">Effectif</a>
+            <a role="tab" class="tab tab-active">Classement</a>
+            <a role="tab" class="tab">Statistiques</a>
+            <a role="tab" class="tab">Journées</a>
+        </div>
+
+        <div class="overflow-s text-xs container lg:max-w-[50rem]">
+            <table class="table table-sm">
+                <!-- head -->
+                <thead>
+                    <tr class="text-xs">
+                        <th></th>
+                        <th></th>
+                        <th>MJ</th>
+                        <th>G</th>
+                        <th>N</th>
+                        <th>P</th>
+                        <th>DB</th>
+                        <th>PTS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- row 1 -->
+                    <tr class="hover:bg-gray-600 hover:text-gray-50 ease-in-out duration-300">
+                        <th>1</th>
+                        <td><a href="#">Liverpool FC</a></td>
+                        <td>24</td>
+                        <td>21</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>+16</td>
+                        <td>42</td>
+                    </tr>
+                    <!-- row 2 -->
+                    <tr>
+                        <th>2</th>
+                        <td>Arsenal</td>
+                        <td>24</td>
+                        <td>21</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>+16</td>
+                        <td>42</td>
+                    </tr>
+                    <!-- row 3 -->
+                    <tr>
+                        <th>3</th>
+                        <td>Manchester City</td>
+                        <td>24</td>
+                        <td>21</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>+16</td>
+                        <td>42</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </main>
 </body>
+
 </html>
